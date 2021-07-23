@@ -6,8 +6,8 @@ public class contactDetails {
 	    private String lastName;
 	    private String addressCity;
 	    private String state;
-	    private int zip;
-	    private String phoneNumber;
+	    private long zip;
+	    private long phoneNum;
 	    private String email;
 
 	    // access private fields using getters and setters
@@ -43,20 +43,20 @@ public class contactDetails {
 	        this.state = state;
 	    }
 
-	    public int getZip() {
+	    public long getZip() {
 	        return zip;
 	    }
 
-	    public void setZip(int zip) {
+	    public void setZip(long zip) {
 	        this.zip = zip;
 	    }
 
-	    public String getPhoneNumber() {
-	        return phoneNumber;
+	    public long getPhoneNum() {
+	        return phoneNum;
 	    }
 
-	    public void setPhoneNumber(String phoneNumber) {
-	        this.phoneNumber = phoneNumber;
+	    public void setPhoneNum(long phoneNum) {
+	        this.phoneNum = phoneNum;
 	    }
 
 	    public String getEmail() {
@@ -77,9 +77,8 @@ public class contactDetails {
 	                ", addressCity='" + addressCity + '\'' +
 	                ", state='" + state + '\'' +
 	                ", zip=" + zip +
-	                ", phoneNumber='" + phoneNumber + '\'' +
+	                ", phoneNum='" + phoneNum + '\'' +
 	                ", email='" + email + '\'' +
 	                '}';
 	    }
 	}
-
