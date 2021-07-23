@@ -32,7 +32,7 @@ public class contactDetails {
 	        return addressCity;
 	    }
 
-	    public void setAddressCity(String address) {
+	    public void setAddressCity(String addressCity) {
 	        this.addressCity = addressCity;
 	    }
 	    public String getState() {

@@ -39,8 +39,19 @@ public class addressBook {
         person.setPhoneNum(phoneNumber);
         person.setEmail(email);
 
-        System.out.println(person);
+    }
+    /*
+     * Declaring editContact Method To Edit The Data
+     */
+    public void editContact() {
+        System.out.println("Enter the firstName of person");
+        String editName = sc.nextLine();
+        if (editName.equalsIgnoreCase(person.getFirstName())) {
+            add();
+        } else {
+            System.out.println("The name does not match the AddressBook");
+            System.out.println("Please enter valid First Name");
+            editContact();
+        }
     }
 }
-
-
