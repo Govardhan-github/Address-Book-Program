@@ -1,7 +1,7 @@
 
 public class contactDetails {
 
-	    //declaring contact details variables
+	    //Declaring Contact Details Variables
 	    private String firstName;
 	    private String lastName;
 	    private String addressCity;
@@ -10,7 +10,7 @@ public class contactDetails {
 	    private long phoneNum;
 	    private String email;
 
-	    // access private fields using getters and setters
+	    //  Using getters and setters
 
 	    public String getFirstName() {
 	        return firstName;
