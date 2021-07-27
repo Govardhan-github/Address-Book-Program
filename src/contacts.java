@@ -11,13 +11,13 @@ public class contacts extends contactDetails {
     private Long phoneNum;
     private String email;
 
-    public contacts(String firstName, String lastName, String addressCity, String state, Long zipCode, Long phoneNumber, String email) {
+    public contacts(String firstName, String lastName, String addressCity, String state, Long zip, Long phoneNum, String email) {
         super();
         this.firstName = firstName;
         this.lastName = lastName;
         this.addressCity = addressCity;
         this.state = state;
-        this.zip = zipCode;
+        this.zip = zip;
         this.phoneNum = phoneNum;
         this.email = email;
     }
@@ -79,7 +79,7 @@ public class contacts extends contactDetails {
     }
 
     public void setEmail(String s) {
-        this.email =email;
+        this.email = email;
     }
 
     //Overridden Java toString method

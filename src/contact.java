@@ -10,7 +10,7 @@ public class contact {
     private long phoneNum;
     private String email;
     
-    contact(String firstName, String lastName, String addressCity, String state, long zip, long phoneNumber, String email) {
+    contact(String firstName, String lastName, String addressCity, String state, long zip, long phoneNum, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.addressCity = addressCity;
@@ -65,8 +65,8 @@ public class contact {
         return phoneNum;
     }
 
-    public void setPhoneNum(long phoneNum) {
-        this.phoneNum = phoneNum;
+    public void setPhoneNum(long newPhone) {
+        this.phoneNum = newPhone;
     }
 
     public String getEmail() {
@@ -91,5 +91,10 @@ public class contact {
                 ", email='" + email + '\'' +
                 '}';
     }
+
+	public boolean equalsIgnoreCase(String string) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
 

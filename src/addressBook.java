@@ -1,17 +1,18 @@
 import java.util.*;
-
+/*
+ * Declaring AddressBook Class Here
+ */
 public class addressBook {
-	/*
-	 * Declaring AddressBook Class Here
-	 */
+	
     Scanner sc = new Scanner(System.in);
     public String name;
 
     
     // Arraylist to store multiple contacts
-    public ArrayList<contact> addressBook = new ArrayList<>();
-
     
+   public ArrayList<contact> addressBook = new ArrayList<>();
+
+    //Here Declaring Constructor To Initialize The Name
     public addressBook(String name) {
         this.name = name;
     }
@@ -29,9 +30,9 @@ public class addressBook {
             }
         }
         addressBook.add(contact);
-        System.out.println("ADDRESS BOOK-----> " + addressBook);
+        System.out.println("ADDRESS BOOK---> " + addressBook);
         for (contact contact1 : addressBook) {
-            System.out.println("CONTACT LIST------> " + contact1);
+            System.out.println("CONTACT LIST---> " + contact1);
         }
     }
 
@@ -67,7 +68,7 @@ public class addressBook {
                         case 3:
                             System.out.println("Enter new address:");
                             String newAddress = sc.next();
-                            contact.setaddressCity(newAddress);
+                            contact.setAddressCity(newAddress);
                             System.out.println(contact);
                             break;
 
@@ -80,14 +81,14 @@ public class addressBook {
 
                         case 6:
                             System.out.println("Enter new zipcode:");
-                            String newZipcode = sc.next();
-                            contact.setzip(newZip);
+                            long newZipcode = sc.nextLong();
+                            contact.setZip(newZipcode);
                             System.out.println(contact);
                             break;
 
                         case 7:
                             System.out.println("Enter new phone number :");
-                            String newPhone = sc.next();
+                            long newPhone = sc.nextLong();
                             contact.setPhoneNum(newPhone);
                             System.out.println(contact);
                             break;
@@ -107,21 +108,18 @@ public class addressBook {
         }
     }
 
-
-    /*
-     * Declaring editContact Method To Delete The Data
-     */    
     // DELETE contact from the address book by the FIRSTNAME
     public void deleteContact(String firstname) {
-        String checkName2;
-        for (contact contact : addressBook) {
-            checkName2 = contact.getFirstName();
-            System.out.println(checkName2);
-            if (firstname.equalsIgnoreCase(checkName2)) {
-                addressBook.remove(contact);
-                System.out.println("Contact name " + firstname + "deleted successfully from the contact list");
-            } else {
-                System.out.println("No any user belongs to this " + firstname + " mail id Try Again !!");
-            }
-        }
+    	 Iterator i = addressBook.iterator();
+    	 while(i.hasNext()) 
+    	 {
+    		 String AddressBook = "";
+			if(i.equals(AddressBook))
+    		 {
+    			 i.remove();
+    			 System.out.println(i);
+    		 }
+    	 }   
     }
+}
+         
